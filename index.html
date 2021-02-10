@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proba Urlap</title>
+
+    <script>
+        function szamolas() {
+            var ev = document.korszamitas.szulev.value * 1;
+            document.korszamitas.kor.value = 2020 - ev;
+        }
+
+    </script>
+</head>
+
+<body style="background-image:url(hatter.jpg)">
+    <h1 style="text-align: center; color: white;">Egy kis progarmozas JavaScript segítségével</h1>
+    <div style="margin: auto;  width: 365px; ; padding: 10px; background-color: rgba(235, 235, 235, 0.75); font-weight: bold; ">
+        <form name="korszamitas" action="feldolgozo.html">
+            Születési éved: <input type="text" name="szulev">
+            <input type="button" value="Számolás" onClick="szamolas()"><br><br>
+            Az életkorod: <input type="text" name="kor">
+
+            <br><br>
+            Név: <input type="text" name="nev"><br>
+            <br>
+            Nemem: <br>
+            <input type="radio" id="ferfi" name="nem" value="ferfi">
+            <label for="ferfi">Férfi</label><br>
+            <input type="radio" id="no" name="nem" value="no">
+            <label for="no">Nó</label><br>
+            <input type="radio" id="mas" name="nem" value="mas">
+            <label for="mas">Más</label>
+            <br><br>
+
+            <label for="cars">Hobbim</label>
+            <select id="cars" name="cars">
+                <option value="edzes">Edzés</option>
+                <option value="tavolbanezes">Távolba nézés</option>
+                <option value="olvasas">Olvasás</option>
+                <option value="fozes">Főzés</option>
+            </select>
+            <br><br>
+
+            Mobiltelefon-szolgátltatóm: <br>
+            <input type="checkbox" id="szolgaltato1" name="Telekom" value="Telekom">
+            <label for="vehicle1"> Telekom</label><br>
+            <input type="checkbox" id="szolgaltato2" name="Telenor" value="Telenor">
+            <label for="vehicle2">Telenor</label><br>
+            <input type="checkbox" id="szolgaltato3" name="Digi" value="Digi">
+            <label for="vehicle3"> Digi</label>
+            <br><br>
+            
+            Email-cím: <input type="email" name="email"><br><br>
+            Jelszó: <input type="password" name="password"><br><br>
+            <input type="submit">
+            <input type="reset" value="Törlés"><br><br>
+
+
+        </form>
+    </div>
+
+</body>
+
+</html>
